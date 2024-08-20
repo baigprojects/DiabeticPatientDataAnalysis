@@ -1,0 +1,10 @@
+set title 'Diabetes Average in Canada Between 2015 and 2021'
+set xlabel 'Years'
+set ylabel 'Diabetes Average'
+set xtics 1
+
+plot "dataOntario.txt" using 1:2 title "Ontario Average" with lp, \
+     "dataQuebec.txt" using 1:2 title "Quebec Average" with lp, \
+     "dataAlberta.txt" using 1:2 title "Alberta Average" with lp, \
+     "dataBritishColumbia.txt" using 1:2 title "British Columbia Average" with lp, \
+     "dataCanada.txt" using 1:2 title "Canada (excluding territories) Average" with lp
