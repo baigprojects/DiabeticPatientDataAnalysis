@@ -1,0 +1,11 @@
+set title 'Diabetes average per age group in Canada'
+set xlabel 'Age Groups'
+set ylabel 'Average Diabetes Percentage'
+set xtics 1
+set xrange [0:4]
+set yrange [0:30]
+
+set style fill solid
+set boxwidth 0.8
+
+plot "bar.txt" using 2:xtic(1) with boxes title "Diabetes Average"
